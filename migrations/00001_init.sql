@@ -1,0 +1,8 @@
+-- +goose Up
+-- Users
+CREATE TABLE (
+    id INTEGER PRIMARY KEY AUTOINCREMENT, 
+    telegram_id INTEGER UNIQUE NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
